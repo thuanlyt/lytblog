@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.mjs
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteTitle: `ThuanLYT Blog`,
+    siteTitleAlt: `ThuanLYT Blog - Blog chia sẻ`,
+    siteHeadline: `Blog chia sẻ CF, Design from ThuanLYT`,
+    siteUrl: `https://thuanlyt.id,vn`,
+    siteDescription: `Blog chia sẻ về CF, ứng dụng, tài nguyên thiết kế và rất nhiều thứ khác`,
     siteImage: `/banner.jpg`,
-    siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    siteLanguage: `vi`,
+    author: `@thuanlyt`,
   },
   trailingSlash: `always`,
   plugins: [
@@ -35,12 +35,16 @@ const config: GatsbyConfig = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Tiktok`,
+            url: `https://tiktok.com/@thuanlyt`,
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `Facebook`,
+            url: `https://facebook.com/thuanlyt`,
+          },
+          {
+            name: `Youtube`,
+            url: `https://youtube.com/@thuanlyt`,
           },
         ],
       },
@@ -54,9 +58,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `ThuanLYT Blog - Blog chia sẻ`,
+        short_name: `ThuanLYT Blog`,
+        description: `Blog chia sẻ về CF, ứng dụng, tài nguyên thiết kế và rất nhiều thứ khác`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
@@ -101,7 +105,7 @@ const config: GatsbyConfig = {
             }) =>
               allPost.nodes.map((post) => {
                 const url = site.siteMetadata.siteUrl + post.slug
-                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`
+                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Tiếp tục đọc</a>.</strong></div><br /> <br />`
 
                 return {
                   title: post.title,
@@ -123,7 +127,7 @@ const config: GatsbyConfig = {
   }
 }`,
             output: `rss.xml`,
-            title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+            title: `ThuanLYT Blog - Blog chia sẻ`,
           },
         ],
       },
