@@ -40,7 +40,7 @@ const Tag = ({ posts, pageContext }: MBTagProps) => {
           sx={(t) => ({ ...t.styles?.a, variant: `links.secondary`, marginY: 2 })}
           to={replaceSlashes(`/${basePath}/${tagsPath}`)}
         >
-          Xem tất cả tags
+          View all tags
         </Link>
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />

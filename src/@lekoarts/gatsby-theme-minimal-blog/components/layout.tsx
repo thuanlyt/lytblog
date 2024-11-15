@@ -27,7 +27,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
         },
       })}
     />
-    <SkipNavLink>Bỏ qua đến nội dung</SkipNavLink>
+    <SkipNavLink>Skip to content</SkipNavLink>
     <Container>
       <Header />
       <Box id="skip-nav" as="main" variant="layout.main" sx={{ ...CodeStyles }} className={className}>
