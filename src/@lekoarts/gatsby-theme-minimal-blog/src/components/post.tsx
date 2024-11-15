@@ -47,7 +47,7 @@ const Post: React.FC<React.PropsWithChildren<PageProps<MBPostProps>>> = ({ data:
         </React.Fragment>
       )}
       {post.timeToRead && ` — `}
-      {post.timeToRead && <span>{post.timeToRead} min read</span>}
+      {post.timeToRead && <span>{post.timeToRead} phút đọc</span>}
     </p>
     <section
       sx={{
