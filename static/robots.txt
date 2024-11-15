@@ -1,3 +1,3 @@
 User-agent: *
 
-sitemap: https://minimal-blog.lekoarts.de/sitemap-index.xml
+sitemap: https://blog.thuanlyt.id.vn/sitemap-index.xml
