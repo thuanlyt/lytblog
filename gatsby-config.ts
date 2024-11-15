@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
     siteTitle: `ThuanLYT Blog`,
     siteTitleAlt: `ThuanLYT Blog - Blog chia sẻ`,
     siteHeadline: `Blog chia sẻ CF, Design from ThuanLYT`,
-    siteUrl: `https://thuanlyt.id.vn`,
+    siteUrl: `https://blog.thuanlyt.id.vn`,
     siteDescription: `Blog chia sẻ về CF, ứng dụng, tài nguyên thiết kế và rất nhiều thứ khác`,
     siteImage: `/banner.jpg`,
     siteLanguage: `vi`,
@@ -52,7 +52,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/`,
+        output: `/sitemap.xml`,
       },
     },
     {
