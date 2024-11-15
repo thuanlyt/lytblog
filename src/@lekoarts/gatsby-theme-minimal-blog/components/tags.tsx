@@ -1,53 +1,44 @@
 /** @jsx jsx */
-import { jsx, Heading, Flex } from "theme-ui"
+import { jsx, Heading, Box, Flex } from "theme-ui"
+// @ts-ignore
+import { kebabCase } from "@lekoarts/themes-utils"
 import { HeadFC, Link } from "gatsby"
 import Layout from "./layout"
 import useMinimalBlogConfig from "../hooks/use-minimal-blog-config"
-import Listing from "./listing"
-import replaceSlashes from "../utils/replaceSlashes"
 import Seo from "./seo"
+import replaceSlashes from "../utils/replaceSlashes"
 
-export type MBTagProps = {
-  posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
-    tags: {
-      name: string
-      slug: string
-    }[]
+export type MBTagsProps = {
+  list: {
+    fieldValue: string
+    totalCount: number
   }[]
-  pageContext: {
-    isCreatedByStatefulCreatePages: boolean
-    slug: string
-    name: string
-  }
 }
 
-const Tag = ({ posts, pageContext }: MBTagProps) => {
+const Tags = ({ list }: MBTagsProps) => {
   const { tagsPath, basePath } = useMinimalBlogConfig()
 
   return (
     <Layout>
-      <Flex sx={{ alignItems: `center`, justifyContent: `space-between`, flexFlow: `wrap` }}>
-        <Heading as="h1" variant="styles.h1" sx={{ marginY: 2 }}>
-          {pageContext.name}
-        </Heading>
-        <Link
-          sx={(t) => ({ ...t.styles?.a, variant: `links.secondary`, marginY: 2 })}
-          to={replaceSlashes(`/${basePath}/${tagsPath}`)}
-        >
-          Xem tất cả tags
-        </Link>
-      </Flex>
-      <Listing posts={posts} sx={{ mt: [4, 5] }} />
+      <Heading as="h1" variant="styles.h1">
+        Tags
+      </Heading>
+      <Box mt={[4, 5]}>
+        {list.map((listItem) => (
+          <Flex key={listItem.fieldValue} mb={[1, 1, 2]} sx={{ alignItems: `center` }}>
+            <Link
+              sx={(t) => ({ ...t.styles?.a, variant: `links.listItem`, mr: 2 })}
+              to={replaceSlashes(`/${basePath}/${tagsPath}/${kebabCase(listItem.fieldValue)}`)}
+            >
+              {listItem.fieldValue} <span sx={{ color: `secondary` }}>({listItem.totalCount})</span>
+            </Link>
+          </Flex>
+        ))}
+      </Box>
     </Layout>
   )
 }
 
-export default Tag
+export default Tags
 
-export const Head: HeadFC<unknown, { name: string }> = ({ pageContext }) => <Seo title={`Tag: ${pageContext.name}`} />
+export const Head: HeadFC = () => <Seo title="Tags" />
