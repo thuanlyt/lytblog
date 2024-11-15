@@ -27,7 +27,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
         },
       })}
     />
-    <SkipNavLink>Skip to content</SkipNavLink>
+    <SkipNavLink>Xem đầy đủ</SkipNavLink>
     <Container>
       <Header />
       <Box id="skip-nav" as="main" variant="layout.main" sx={{ ...CodeStyles }} className={className}>

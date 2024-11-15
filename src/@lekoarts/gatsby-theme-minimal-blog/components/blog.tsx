@@ -35,7 +35,7 @@ const Blog = ({ posts }: MBBlogProps) => {
           sx={(t) => ({ ...t.styles?.a, variant: `links.secondary`, marginY: 2 })}
           to={replaceSlashes(`/${basePath}/${tagsPath}`)}
         >
-          View all tags
+          Xem tất cả tags
         </Link>
       </Flex>
       <Listing posts={posts} sx={{ mt: [4, 5] }} />

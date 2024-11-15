@@ -38,8 +38,8 @@ const Homepage = ({ posts }: MBHomepageProps) => {
       <section sx={{ mb: [5, 6, 7], p: { fontSize: [1, 2, 3], mt: 2 }, variant: `section_hero` }}>
         <Hero />
       </section>
-      <Title text="Latest Posts">
-        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Read all posts</Link>
+      <Title text="Bài viết mới">
+        <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Xem nhiều hơn</Link>
       </Title>
       <Listing posts={posts} showTags={false} />
       <List>
