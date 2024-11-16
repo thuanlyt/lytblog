@@ -10,10 +10,8 @@
 <p align="center">Theo dõi mình qua các nền tảng khác: 
     <a href="https://fb.com/thuanlyt">Facebook</a> 
     <a href="https://youtube.com/@thuanlyt">Youtube</a> 
-    <a href="https://tiktok.com/@thuanlyt">Tiktok</a>
-</p>
-
-<p align="center"Theo dõi Powerseeks CFVN: 
+    <a href="https://tiktok.com/@thuanlyt">Tiktok</a> <br />
+  Theo dõi Powerseeks CFVN: 
     <a href="https://dsc.gg/cfvn">Discord</a> 
     <a href="https://fb.com/powerseeks">Facebook</a> 
     <a href="https://youtube.com/@powerseeks">Youtube</a> 
