@@ -14,6 +14,7 @@
   Theo dõi Powerseeks CFVN: 
     <a href="https://dsc.gg/cfvn">Discord</a> 
     <a href="https://fb.com/powerseeks">Facebook</a> 
-    <a href="https://youtube.com/@powerseeks">Youtube</a> 
+    <a href="https://youtube.com/@powerseeks">Youtube</a>
+    <a href="https://tiktok.com/@powerseeks">Tiktok</a> 
     <a href="https://facebook.com/groups/powerseeks">FB Groups</a>
 </p>
